@@ -9,3 +9,5 @@
 	ci = commit -v
 	co = checkout
 	r = remote -v
+[push]
+	default = matching

@@ -12,6 +12,10 @@ eval $(keychain --agents ssh --eval --quiet ~/.ssh/id_rsa)
 
 CDPATH=~/dev/ksungithub
 
-GIT_PROMPT_ONLY_IN_REPO=1
+export GIT_PROMPT_ONLY_IN_REPO=1
+export GIT_PROMPT_END="\\n\u${green}@${reset}\\h\\$ "
+export GIT_PROMPT_SHOW_UPSTREAM=''
+export GIT_PROMPT_START='' 
+
 source ~/.bash-git-prompt/gitprompt.sh
 
