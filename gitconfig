@@ -1,3 +1,11 @@
 [user]
 	name = Kevin Sun
 	email = Kevin.Sun@epi.usf.edu
+
+[alias]
+	s  = status --short
+	l = log --graph --pretty=format:'%C(cyan)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)' --abbrev-commit
+	b  = branch
+	ci = commit -v
+	co = checkout
+	r = remote -v
